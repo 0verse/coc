@@ -1,5 +1,5 @@
 # CoreC
-CoreC Systems Programming Language
+CoreC is a systemic programming language based on top of the C programming language.
 
 ## Cade Examples
 ```
