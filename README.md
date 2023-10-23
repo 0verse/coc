@@ -10,7 +10,7 @@ gcc -o hello hello.c
 ./hello
 ```
 
-## Cade Examples
+## Example
 ```rust
     main()
 {
