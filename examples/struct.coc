@@ -1,4 +1,4 @@
-    def struct
+    record
 {
     u8* name;
     u16 age;
