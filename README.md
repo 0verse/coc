@@ -15,4 +15,4 @@ gcc -o hello hello.c
     println("hello world");
 }
 ```
-[More examples](https://github.com/0verse/CoC/examples)
+[More examples](https://github.com/0verse/CoC/tree/main/examples)
