@@ -3,8 +3,6 @@ CoC is a systemic programming language of the C programming language.
 
 ## Cade Examples
 ```
-#include "corec.h"
-
     main()
 {
     println("hello world");
@@ -12,8 +10,6 @@ CoC is a systemic programming language of the C programming language.
 ```
 
 ```
-#include "corec.h"
-
     main()
 {
     i8 a = 5;
@@ -35,8 +31,6 @@ CoC is a systemic programming language of the C programming language.
 ```
 
 ```
-#include "corec.h"
-
     main()
 {
     u8 a = '+';
@@ -57,5 +51,19 @@ CoC is a systemic programming language of the C programming language.
         esac:
             println("a is other charcter");
     }
+}
+```
+
+```
+    def struct
+{
+    u8* name;
+    u16 age;
+}   id;
+
+    main()
+{
+    id id1 = {.name = "ali", .age = 244 };
+    println("%s is %d years old", id1.name, id1.age);
 }
 ```
