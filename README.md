@@ -1,6 +1,13 @@
 # CoC
 CoC is a systemic programming language of the C programming language.
 
+## Usage
+```
+./cocc.sh hello.coc
+gcc -o hello hello.c
+./hello
+```
+
 ## Cade Examples
 ```
     main()
