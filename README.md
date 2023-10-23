@@ -9,7 +9,7 @@ gcc -o hello hello.c
 ```
 
 ## Cade Examples
-```
+```rust
     main()
 {
     println("hello world");
