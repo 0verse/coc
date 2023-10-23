@@ -1,4 +1,5 @@
-<img src="/images/logo.svg" width="50%" height="50%">
+<img src="/images/logo.svg" width="30%" height="30%"></img>
+
 # The CoC Programming Language
 CoC is a systemic programming language of the C programming language.
 
