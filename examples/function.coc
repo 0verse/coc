@@ -1,0 +1,19 @@
+    say_hello(u8* name)
+{
+    println("hello %s", name);
+}
+
+    i32 add(i32 a, i32 b)
+{
+    return a + b;
+}
+
+    main()
+{
+    u8* ad = "Kral Marks";
+    say_hello(ad);
+
+    i32 a = 250, b = 250;
+    i32 c = add(a, b);
+    println("%d + %d is %d", a, b, c);
+}

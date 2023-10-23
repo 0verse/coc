@@ -1,0 +1,21 @@
+    main()
+{
+    u8 a = '+';
+
+        switch (a)
+    {
+        case '/':
+            println("a is %c", a);
+            break;
+        case '*':
+            println("a is %c", a);
+            break;
+        case '+':
+            println("a is %c", a);
+            break;
+        case '-':
+            println("a is %c", a);
+        esac:
+            println("a is other charcter");
+    }
+}

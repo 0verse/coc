@@ -1,0 +1,19 @@
+    main()
+{
+    i8 a = 5;
+
+        if (a == 4)
+    {
+        println("a is %d", a);
+    }
+        or (a == 5)
+    {
+        println("a is %d", a);
+    }
+        fi
+    {
+        println("a is %d", a);
+    }
+
+}
+
