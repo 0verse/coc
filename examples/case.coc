@@ -15,6 +15,7 @@
             break;
         case '-':
             println("a is %c", a);
+            break;
         esac:
             println("a is other charcter");
     }
