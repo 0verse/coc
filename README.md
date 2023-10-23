@@ -14,7 +14,7 @@ gcc -o hello hello.c
 ```rust
     main()
 {
-    println("hello world");
+    println("hello world!");
 }
 ```
 [More examples](https://github.com/0verse/CoC/tree/main/examples)
