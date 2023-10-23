@@ -16,7 +16,7 @@ gcc -o hello hello.c
 }
 ```
 
-```
+```rust
     main()
 {
     i8 a = 5;
@@ -37,7 +37,7 @@ gcc -o hello hello.c
 }
 ```
 
-```
+```rust
     main()
 {
     u8 a = '+';
@@ -61,7 +61,7 @@ gcc -o hello hello.c
 }
 ```
 
-```
+```rust
     def struct
 {
     u8* name;
@@ -75,7 +75,7 @@ gcc -o hello hello.c
 }
 ```
 
-```
+```rust
     say_hello(u8* name)
 {
     println("hello %s", name);
