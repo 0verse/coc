@@ -70,7 +70,7 @@ gcc -o hello hello.c
 
     main()
 {
-    id id1 = {.name = "ali", .age = 244 };
+    id id1 = {.name = "ali", .age = 296};
     println("%s is %d years old", id1.name, id1.age);
 }
 ```
