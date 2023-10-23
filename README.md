@@ -1,4 +1,4 @@
-![GitHub Image](/images/logo.svg)
+<img src="/images/logo.svg" width="50%" height="50%">
 # The CoC Programming Language
 CoC is a systemic programming language of the C programming language.
 
