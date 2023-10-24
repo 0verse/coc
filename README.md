@@ -5,7 +5,7 @@ Co C is a systemic approach of the C programming language. The Co C syntax looks
 
 ## Usage
 ```
-./cocc.sh hello.co
+./cocc.sh examples/hello.co
 gcc -o hello hello.c
 ./hello
 ```
