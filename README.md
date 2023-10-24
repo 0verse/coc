@@ -17,4 +17,4 @@ gcc -o hello hello.c
     println("hello world!");
 }
 ```
-[More examples](https://github.com/0verse/co-c/tree/main/examples)
+[More examples](https://github.com/0verse/coc/tree/main/examples)
