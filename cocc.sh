@@ -1,7 +1,7 @@
 #!/bin/sh
 
 coc_file=$1
-c_file=$(basename -s .coc $coc_file).c
+c_file=$(basename -s .co $coc_file).c
 cp $coc_file $c_file
 
 sed -e "1s/^/#include \"coc.h\"\n\n/"                -i $c_file

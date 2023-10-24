@@ -1,11 +1,11 @@
 <img src="/images/logo.svg" width="30%" height="30%"></img>
 
-# The CoC Programming Language
-CoC is a systemic programming language of the C programming language.
+# The Co C Programming Language
+Co C is a systemic programming language of the C programming language.
 
 ## Usage
 ```
-./cocc.sh hello.coc
+./cocc.sh hello.co
 gcc -o hello hello.c
 ./hello
 ```
@@ -17,4 +17,4 @@ gcc -o hello hello.c
     println("hello world!");
 }
 ```
-[More examples](https://github.com/0verse/CoC/tree/main/examples)
+[More examples](https://github.com/0verse/co-c/tree/main/examples)
