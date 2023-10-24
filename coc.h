@@ -28,9 +28,12 @@ typedef uint16_t u16;
 typedef uint32_t u32;
 typedef uint64_t u64;
 
-// mostly inspired by:
-// https://nullprogram.com/blog/2023/10/08/
+#define fi else
+#define or else if
+#define esac default
+#define record typedef struct
 
+// https://nullprogram.com/blog/2023/10/08/
 #define sizeof(x)    (isize)sizeof(x)
 #define alignof(x)   (isize)_Alignof(x)
 #define countof(a)   (sizeof(a) / sizeof(*(a)))
