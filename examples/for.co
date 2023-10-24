@@ -1,0 +1,8 @@
+    main()
+{
+    i8 numbers[5] = {10, 20, 30, 40, 50};
+        foreach(i8 *num, numbers)
+    {
+        println("number: %d", *num);
+    }
+}

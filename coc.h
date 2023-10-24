@@ -33,6 +33,15 @@ typedef uint64_t u64;
 #define esac default
 #define record typedef struct
 
+// https://stackoverflow.com/questions/34007634/macro-foreach-loop-in-c
+#define foreach(item, array) \
+    for(int keep = 1, \
+            count = 0,\
+            size = sizeof (array) / sizeof *(array); \
+        keep && count != size; \
+        keep = !keep, count++) \
+      for(item = (array) + count; keep; keep = !keep)
+
 // https://nullprogram.com/blog/2023/10/08/
 #define sizeof(x)    (isize)sizeof(x)
 #define alignof(x)   (isize)_Alignof(x)
