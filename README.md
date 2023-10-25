@@ -18,3 +18,34 @@ gcc -o hello hello.c
 }
 ```
 [More examples](https://github.com/0verse/coc/tree/main/examples)
+
+## The forthcoming Co Programming Language syntax
+```
+"a 5      variable"
+"< < >    enumerate"
+"< > >    structure"
+"< < > >  function"
+
+< color < red blue green >
+< animal >  
+  kind cat
+  age  20
+  says "myau"
+>
+
+x 10 
+y 20 
+< add < x y > x + y >
+
+print < add < x y > >
+
+< amra < > >
+< amra < x y > >
+< amra < x y > x + y >
+< amra < x y > 
+  x + y 
+>
+
+yaz < amra < x y > >
+yaz < "güle güle" >
+```
