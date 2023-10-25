@@ -27,7 +27,7 @@ gcc -o hello hello.c
 "< < > >   function"
 
 < color < red blue green >
-< animal >
+< animal                 >
   kind  "cat"
   age     20
   says "myau"
