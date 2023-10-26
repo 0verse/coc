@@ -21,10 +21,15 @@ gcc -o hello hello.c
 
 ## The forthcoming Co Programming Language syntax
 ```
-"a 5       variable"
-"< < >    enumerate"
-"< > >    structure"
-"< < > >   function"
+"a 5        variable/array"
+"< < >     enumerate/array"
+"< > >    structure/object"
+"< < > >   function/object"
+
+b   "sol"
+c "sağol"
+ç   "sağ"
+a b c ç
 
 < color < red blue green >
 < animal                 >
