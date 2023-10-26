@@ -26,9 +26,9 @@ gcc -o hello hello.c
 "< > >    structure/object"
 "< < > >   function/object"
 
-b   "sol"
-c "sağol"
-ç   "sağ"
+b     "sol"
+c "s ağ/ol"
+ç     "sağ"
 a b c ç
 
 < color < red blue green >
