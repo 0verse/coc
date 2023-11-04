@@ -1,16 +1,13 @@
-#include <stdarg.h>
+#include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
+
 #include <string.h>
 #include <unistd.h>
 #include <sys/syscall.h>
 
-//#ifdef __cplusplus
-//typedef bool b8;
-//#else
-typedef _Bool b8;
-//#endif
+typedef bool b8;
 typedef int32_t b32;
 
 typedef float f32;
