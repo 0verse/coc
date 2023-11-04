@@ -65,20 +65,8 @@ static u64   s8hash(s8);
 static s8    s8trim(s8);
 //static s8    s8clone(s8, arena *);
 
-void print(const char *fmt, ...) {
-    va_list args;
-    va_start(args, fmt);
-    vprintf(fmt, args);
-    va_end(args);
-}
-
-void println(const char *fmt, ...) {
-    va_list args;
-    va_start(args, fmt);
-    vprintf(fmt, args);
-    va_end(args);
-    printf("\n");
-}
+#define print(  msg, ...) printf(msg __VA_OPT__(,) __VA_ARGS__)
+#define println(msg, ...) printf(msg __VA_OPT__(,) __VA_ARGS__); print("\n");
 
 // https://github.com/Spydr06/BCause/blob/main/src/libb/libb.c
 #define syswr(string) (syscall(SYS_write, 1, (string), strlen((string))))

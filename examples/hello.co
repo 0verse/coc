@@ -1,4 +1,5 @@
     main()
 {
+    print  ("well "       );
     println("hello world!");
 }
