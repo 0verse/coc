@@ -1,0 +1,5 @@
+    main()
+{
+    syswr("merhaba  dünya!\n");
+    sysln("hoşçakal dünya!"  );
+}

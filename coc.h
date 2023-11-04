@@ -2,6 +2,9 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/syscall.h>
 
 //#ifdef __cplusplus
 //typedef bool b8;
@@ -76,3 +79,8 @@ void println(const char *fmt, ...) {
     va_end(args);
     printf("\n");
 }
+
+// https://github.com/Spydr06/BCause/blob/main/src/libb/libb.c
+#define syswr(string) (syscall(SYS_write, 1, (string), strlen((string))))
+#define sysln(string) (syscall(SYS_write, 1, (string), strlen((string)))) \
+                      ;syscall(SYS_write, 1,  "\n",    strlen("\n"     ))
