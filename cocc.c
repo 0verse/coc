@@ -1,4 +1,6 @@
-#include "coc.h"
+#include "cocc.h"
+
+#define MAX_CMD 150
 
     usage(u8* prog)
 {
@@ -8,20 +10,33 @@
     println("%s clean <filenema.co>      / clean up generated c file",   prog);
 }
 
-    trans(u8* arg2)
-{
-    u8 cmd[100] = "./cocc.sh ";
-    strcat(cmd, arg2);
-    system(cmd);
-}
-
     u8* build(u8* arg1, u8* arg2)
 {
+    u8 cpcmd[MAX_CMD] = "cp ";
+    strcat(cpcmd, arg2);
+
     u8* fname;
     (fname = strrchr(arg2, '/')) ? ++fname : (fname = arg2);
     fname[strlen(fname)-1] = '\0';
 
-    u8 remcmd[100] = "rm ";
+    strcat(cpcmd, " ");
+    strcat(cpcmd, fname);
+    system(cpcmd);
+
+    u8 tr1cmd[MAX_CMD] = "sed -i -e '1s/^/#include \"cocc.h\"\\n\\n/' ";
+    u8 tr2cmd[MAX_CMD] = "sed -i -e '/^\\s\\+main/ s/\\main\\b/void main/g' ";
+
+    strcat(tr1cmd, fname);
+    strcat(tr2cmd, fname);
+    system(tr1cmd);
+    system(tr2cmd);
+
+        if (strcmp(arg1, "trans") == 0)
+    {
+        return 0;
+    }
+
+    u8 remcmd[MAX_CMD] = "rm ";
 
         if (strcmp(arg1, "clean") == 0)
     {
@@ -29,7 +44,7 @@
         strcat(remcmd, " ");
     }
 
-    u8 bldcmd[100] = "gcc -Wno-implicit-int ";
+    u8 bldcmd[MAX_CMD] = "gcc -Wno-implicit-int ";
 
         if ((strcmp(arg1, "build") == 0) || (strcmp(arg1, "runit") == 0))
     {
@@ -55,7 +70,7 @@
 
         if (strcmp(arg1, "runit") == 0)
     {
-        u8 runcmd[100] = "./";
+        u8 runcmd[MAX_CMD] = "./";
         strcat(runcmd, fname);
         system(runcmd);
     }
@@ -91,17 +106,15 @@
 
         if (strcmp(arg1, "runit") == 0)
     {
-        trans(arg2);
         build(arg1, arg2);
     }
         else if (strcmp(arg1, "build") == 0)
     {
-        trans(arg2);
         build(arg1, arg2);
     }
         else if (strcmp(arg1, "trans") == 0)
     {
-        trans(arg2);
+        build(arg1, arg2);
     }
         else if (strcmp(arg1, "clean") == 0)
     {
