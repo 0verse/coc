@@ -23,13 +23,9 @@
     strcat(cpcmd, fname);
     system(cpcmd);
 
-    u8 tr1cmd[MAX_CMD] = "sed -i -e '1s/^/#include \"cocc.h\"\\n\\n/' ";
-    u8 tr2cmd[MAX_CMD] = "sed -i -e '/^\\s\\+main/ s/\\main\\b/void main/g' ";
-
-    strcat(tr1cmd, fname);
-    strcat(tr2cmd, fname);
-    system(tr1cmd);
-    system(tr2cmd);
+    u8 trscmd[MAX_CMD] = "sed -i -e '1s/^/#include \"cocc.h\"\\n\\n/' ";
+    strcat(trscmd, fname);
+    system(trscmd);
 
         if (strcmp(arg1, "trans") == 0)
     {
